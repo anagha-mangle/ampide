@@ -182,11 +182,12 @@ def get_grade():
     result = grade(s)
     return result
 
-
+def main():
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=7860)
 # ---------------------------------------------------------------------------
 # Dev server entry point
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=7860, reload=False)
+    main()
