@@ -12,7 +12,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.8"
 [project.scripts]
-server = "server"
+server = "server.app:main"
 dependencies = [
     "fastapi==0.115.5",
     "uvicorn[standard]==0.32.1",
@@ -24,4 +24,4 @@ dependencies = [
 ]
 
 [tool.setuptools]
-py-modules = ["ampide_env", "tasks", "grader", "server", "inference"]
+py-modules = ["ampide_env", "tasks", "grader", "inference"]
