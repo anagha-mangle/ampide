@@ -1,3 +1,13 @@
+---
+title: Ampide
+emoji: 📈
+colorFrom: purple
+colorTo: red
+sdk: docker
+pinned: false
+license: apache-2.0
+---
+
 # AMPIDE — Adversarial Multi-Turn Prompt Injection Defense Environment
 
 ## Overview
