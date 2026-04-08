@@ -213,4 +213,16 @@ curl http://localhost:7860/grade
 
 ## License
 
-[Specify your license]
+MIT License - See LICENSE file for details.
+
+## Citation
+
+If you use AMPIDE in your research, please cite:
+
+```
+@misc{ampide2026,
+  title={AMPIDE: Adversarial Multi-Turn Prompt Injection Defense Environment},
+  year={2026},
+  note={OpenEnv Benchmark}
+}
+```
