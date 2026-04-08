@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ampide_env.py .
 COPY tasks.py      .
 COPY grader.py     .
-COPY server.py     .
+COPY server/app.py .
 COPY inference.py  .
 COPY openenv.yaml  .
 
@@ -30,4 +30,7 @@ USER ampide
 ENV AMPIDE_DEFAULT_TASK=easy_direct_injection
 ENV PYTHONUNBUFFERED=1
 
-CMD ["python", "server.py"]
+RUN pip install uv
+RUN python -m uv sync
+
+CMD ["python", "-m", "server.app"]
