@@ -11,14 +11,16 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.8"
-
+[project.scripts]
+server = "server"
 dependencies = [
-"fastapi==0.115.5",
-"uvicorn[standard]==0.32.1",
-"pydantic==2.10.3",
-"openai==1.57.0",
-"pyyaml==6.0.2",
-"python-dotenv==1.2.2"
+    "fastapi==0.115.5",
+    "uvicorn[standard]==0.32.1",
+    "pydantic==2.10.3",
+    "openai==1.57.0",
+    "pyyaml==6.0.2",
+    "python-dotenv==1.2.2",
+    "openenv-core>=0.2.0"
 ]
 
 [tool.setuptools]
