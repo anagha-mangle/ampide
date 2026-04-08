@@ -140,6 +140,7 @@ def get_agent_action(client: OpenAI, obs_dict: Dict[str, Any]) -> AMPIDEAction:
             ],
             temperature=TEMPERATURE,
             max_tokens=MAX_TOKENS,
+            seed=SEED,
         )
         raw = (completion.choices[0].message.content or "{}").strip()
         # Strip markdown fences if present
