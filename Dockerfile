@@ -22,4 +22,7 @@ USER ampide
 ENV AMPIDE_DEFAULT_TASK=easy_direct_injection
 ENV PYTHONUNBUFFERED=1
 
-CMD ["uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860"]
+RUN pip install uv
+RUN python -m uv sync
+
+CMD ["python", "-m", "server.app"]
